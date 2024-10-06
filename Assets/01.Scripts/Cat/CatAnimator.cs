@@ -2,15 +2,19 @@ using UnityEngine;
 
 public class CatAnimator : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [Header("Components")]
+    private Animator _animator;
+
+    [Header("Hash")]
+    private int _movementHash = Animator.StringToHash("Movement");
+
+    private void Awake() 
     {
-        
+        _animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetMovement(bool value)
     {
-        
+        _animator.SetBool(_movementHash, value);
     }
 }
