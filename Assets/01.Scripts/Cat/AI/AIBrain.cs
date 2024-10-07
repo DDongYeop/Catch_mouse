@@ -20,7 +20,8 @@ public class AIBrain : MonoBehaviour
 
     private void Update() 
     {
-        _currentState.UpdateState();
+        if (GameManager.Instance.GamePlay)
+            _currentState.UpdateState();
     }
 
     public void ChangeState(AIState nextState)
