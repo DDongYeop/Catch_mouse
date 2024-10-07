@@ -13,7 +13,7 @@ public class UI_SettingPanel : MonoBehaviour
 
     private void Awake() 
     {
-        if (PlayerPrefs.HasKey("BGM"))
+        if (!PlayerPrefs.HasKey("BGM"))
         {        
             PlayerPrefs.SetFloat("BGM", 1); //차후 JSON으로 변경
             PlayerPrefs.SetFloat("SFX", 1); //차후 JSON으로 변경

@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
             _money = value;
             if (_moneyText)
                 _moneyText.text = _money.ToString();
+            PlayerPrefs.SetInt("Money", _money);
         }
     }
 
@@ -38,7 +39,7 @@ public class GameManager : MonoBehaviour
     {
         GamePlay = true;
 
-        if (PlayerPrefs.HasKey("Money"))
+        if (!PlayerPrefs.HasKey("Money"))
             PlayerPrefs.SetInt("Money", 0);
         Money = PlayerPrefs.GetInt("Money");
     }
