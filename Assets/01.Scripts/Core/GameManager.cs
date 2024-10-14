@@ -33,15 +33,23 @@ public class GameManager : MonoBehaviour
         Instance = this;
 
         CreatePool();
+        Init();
     }
 
-    private void Start() 
+    private void Init() 
     {
-        GamePlay = true;
+        if (!PlayerPrefs.HasKey(CatType.Cat01.ToString()))
+        {
+            for (int i = 0; i < (int)CatType.END; ++i)
+                PlayerPrefs.SetInt(((CatType)i).ToString(), 0); 
+            PlayerPrefs.SetInt(CatType.Cat01.ToString(), 2); 
+        }
 
         if (!PlayerPrefs.HasKey("Money"))
             PlayerPrefs.SetInt("Money", 0);
         Money = PlayerPrefs.GetInt("Money");
+
+        GamePlay = true;
     }
 
     private void CreatePool()

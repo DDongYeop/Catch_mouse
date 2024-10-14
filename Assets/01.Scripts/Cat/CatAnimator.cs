@@ -17,4 +17,10 @@ public class CatAnimator : MonoBehaviour
     {
         _animator.SetBool(_movementHash, value);
     }
+
+    public void AnimatorChange(CatType type)
+    {
+        var resourceName = "Cat/Animator/" + type.ToString();
+        _animator.runtimeAnimatorController = (RuntimeAnimatorController)Resources.Load(resourceName);
+    }
 }

@@ -14,14 +14,35 @@ public class CatController : MonoBehaviour
     [SerializeField] private float _getPercent;
     [SerializeField] private int _addMoney;
 
+    [Header("Type")]
+    private CatType _type;
+
     private void Awake() 
     {
         Animator = GetComponentInChildren<CatAnimator>();
+    }
+    
+    private void Start() 
+    {
+        Init();
     }
 
     private void Update() 
     {
         TouchCheck();
+    }
+
+    private void Init()
+    {
+        for (int i = 0; i < (int)CatType.END; ++i)
+        {
+            CatType type = (CatType)i;
+            if (PlayerPrefs.GetInt(type.ToString()) == 2)
+            {
+                Animator.AnimatorChange(type);
+                break;
+            }
+        }
     }
 
     private void TouchCheck() //입력을 확인
@@ -38,5 +59,11 @@ public class CatController : MonoBehaviour
         float value = Random.Range(0.0f, 100.0f);
         if (value <= _getPercent)
             GameManager.Instance.Money += _addMoney;
+    }
+
+    public void TypeChange(CatType type)
+    {
+        _type = type;
+        Animator.AnimatorChange(type);
     }
 }
