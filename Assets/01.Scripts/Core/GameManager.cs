@@ -5,6 +5,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    [Header("Cat")]
+    public CatController Cat;
+
     [Header("Coin")]
     [SerializeField] private TextMeshProUGUI _moneyText;
     private int _money;

@@ -7,8 +7,8 @@ public class ItemPanelManager : MonoBehaviour
     
     private void Awake() 
     {
-        for (int i = 0; i < transform.GetChild(1).childCount; ++i)
-            _itemPanelDic.Add((ItemPanelType)i, transform.GetChild(1).GetChild(i).gameObject);
+        for (int i = 0; i < transform.GetChild(0).childCount; ++i)
+            _itemPanelDic.Add((ItemPanelType)i, transform.GetChild(0).GetChild(i).gameObject);
     }
 
     private void Start() 

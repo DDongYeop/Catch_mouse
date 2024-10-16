@@ -22,4 +22,10 @@ public class DataManager : MonoBehaviour
     }
 
     public CatSO GetData(CatType type) => _catDictionary[type];
+
+    [ContextMenu("DeleteAllData")]
+    public void DeleteAllData()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 }

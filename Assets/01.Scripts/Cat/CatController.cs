@@ -17,6 +17,9 @@ public class CatController : MonoBehaviour
     [Header("Type")]
     private CatType _type;
 
+    [Header("Other")]
+    [HideInInspector] public int Dir = 1;
+
     private void Awake() 
     {
         Animator = GetComponentInChildren<CatAnimator>();
@@ -47,17 +50,19 @@ public class CatController : MonoBehaviour
 
     private void TouchCheck() //입력을 확인
     {
-        if (!Input.GetMouseButtonDown(0) || EventSystem.current.IsPointerOverGameObject())
+        // 입력 & UI 체크
+        if (!Input.GetMouseButtonDown(0) || EventSystem.current.IsPointerOverGameObject()) 
             return;
 
+        // 고양이인지 체크
         Vector2 pos = Camera.main.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
         if (!Physics2D.Raycast(pos, Vector2.zero, 1, _whatIsCat))
             return;
 
         PoolManager.Instance.Pop("MeowSound");
  
-        float value = Random.Range(0.0f, 100.0f);
-        if (value <= _getPercent)
+        float value = Random.Range(0.0f, 1.0f);
+        if (value <= _getPercent / 100.0f)
             GameManager.Instance.Money += _addMoney;
     }
 

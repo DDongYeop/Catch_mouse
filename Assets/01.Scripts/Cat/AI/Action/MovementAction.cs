@@ -20,6 +20,8 @@ public class MovementAction : AIAction
         float yValue = Random.Range(_yValue.x, _yValue.y);
         _endPos = new Vector2(xValue, yValue);
 
+        _catController.Dir = (int)Mathf.Sign(transform.position.x - _endPos.x);
+
         _catController.Animator.SetMovement(true);
     }
 
