@@ -45,7 +45,10 @@ public class GameManager : MonoBehaviour
         {
             for (int i = 0; i < (int)CatType.END; ++i)
                 PlayerPrefs.SetInt(((CatType)i).ToString(), 0); 
+            for (int i = 0; i < (int)BackgroundType.END; ++i)
+                PlayerPrefs.SetInt(((BackgroundType)i).ToString(), 0); 
             PlayerPrefs.SetInt(CatType.Cat01.ToString(), 2); 
+            PlayerPrefs.SetInt(BackgroundType.Background01.ToString(), 2); 
         }
 
         if (!PlayerPrefs.HasKey("Money"))

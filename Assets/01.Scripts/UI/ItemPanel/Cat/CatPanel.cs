@@ -8,19 +8,19 @@ public class CatPanel : MonoBehaviour
     private Image _image;
     private TextMeshProUGUI _nameText;
     private TextMeshProUGUI _priceText;
-    private UI_BuyButton _buyButton;
+    private UI_CatBuyButton _buyButton;
 
     private void Awake() 
     {
         _image = transform.GetChild(0).GetComponent<Image>();
         _nameText = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
         _priceText = transform.GetChild(2).GetComponent<TextMeshProUGUI>();
-        _buyButton = transform.GetChild(3).GetComponent<UI_BuyButton>();
+        _buyButton = transform.GetChild(3).GetComponent<UI_CatBuyButton>();
     }
 
     public void Init(CatType type)
     {
-        CatSO cat = DataManager.Instance.GetData(type);
+        CatSO cat = DataManager.Instance.GetCatData(type);
         _currentType = cat.Type;
         _image.sprite = cat.Image;
         _nameText.text = cat.Name;

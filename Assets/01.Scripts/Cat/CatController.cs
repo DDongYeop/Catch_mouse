@@ -66,7 +66,7 @@ public class CatController : MonoBehaviour
             GameManager.Instance.Money += _addMoney;
     }
 
-    public void TypeChange(CatType type)
+    public void CatTypeChange(CatType type)
     {
         _type = type;
         Animator.AnimatorChange(type);

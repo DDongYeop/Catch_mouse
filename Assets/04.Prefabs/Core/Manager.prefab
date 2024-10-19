@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73a91848652194d68b2a46c78da134dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cat: {fileID: 0}
   _moneyText: {fileID: 0}
   _poolingList: {fileID: 11400000, guid: 7d4ec944bea0f4694a12d4df62d4424c, type: 2}
   GamePlay: 1
@@ -78,3 +79,8 @@ MonoBehaviour:
   CatDatas:
   - {fileID: 11400000, guid: 9d77f9369866b4655a5dfd4772373f6c, type: 2}
   - {fileID: 11400000, guid: 76a34360bd5bf4155b27a0633170bcad, type: 2}
+  BackgroundDatas:
+  - {fileID: 11400000, guid: ec59fdcb79cf24bcaac2573e1e4a2732, type: 2}
+  - {fileID: 11400000, guid: 0b53171a9f4e7485281146678661a4ed, type: 2}
+  - {fileID: 11400000, guid: 847ea3d96dee64ff9b547e242e263405, type: 2}
+  - {fileID: 11400000, guid: 0fc1be13e06554633b1e51b56bc04dd8, type: 2}

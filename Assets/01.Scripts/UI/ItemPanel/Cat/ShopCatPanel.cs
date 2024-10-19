@@ -39,7 +39,7 @@ public class ShopCatPanel : MonoBehaviour
 
     public void ChangeCat(CatType type)
     {
-        GameManager.Instance.Cat.TypeChange(type);
+        GameManager.Instance.Cat.CatTypeChange(type);
 
         for (int i = 0; i < (int)CatType.END; ++i)
         {
