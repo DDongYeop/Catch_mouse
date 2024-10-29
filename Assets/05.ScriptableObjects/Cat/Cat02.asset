@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Cat02
   m_EditorClassIdentifier: 
   Type: 1
-  Name: Cat02
+  Name: "\uB799\uB3CC"
   Image: {fileID: 1151240079, guid: 86b85599de1fb4a8a9ed68c3235acb50, type: 3}
-  Money: 10
+  Money: 2000

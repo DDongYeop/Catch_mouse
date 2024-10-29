@@ -26,6 +26,9 @@ public class GameManager : MonoBehaviour
     [Header("Pooling")] 
     [SerializeField] private PoolingListSO _poolingList;
 
+    [Header("UI")]
+    public GameObject PopupUI;
+
     [Header("Other")]
     public bool GamePlay = true;
 

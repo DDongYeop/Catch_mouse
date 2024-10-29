@@ -15,3 +15,11 @@ MonoBehaviour:
   PoolList:
   - Prefab: {fileID: 1349537660226121659, guid: 066c85c8d5b9c4ea6b094c2ba0f9918d, type: 3}
     Count: 5
+  - Prefab: {fileID: 9034774850568492146, guid: 1037e432a7b6048d7b2b54846f952021, type: 3}
+    Count: 5
+  - Prefab: {fileID: -6545884046833671008, guid: 41dfe76c7084f421dad7f723513d7e75, type: 3}
+    Count: 5
+  - Prefab: {fileID: -7877122876014955875, guid: 93bfdfb47f0c44516bb7d3e3a56552b9, type: 3}
+    Count: 5
+  - Prefab: {fileID: 5937917040234484899, guid: 8a3b94a8611284beabd919069d22c78c, type: 3}
+    Count: 5

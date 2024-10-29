@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Cat01
   m_EditorClassIdentifier: 
   Type: 0
-  Name: Cat01
+  Name: "\uD398\uB974\uC2DC\uC548"
   Image: {fileID: 1884430662, guid: 39dd2f32ecb874a5594c80c7dd0a04b9, type: 3}
+  Money: 0

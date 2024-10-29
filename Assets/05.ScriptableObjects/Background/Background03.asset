@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Background03
   m_EditorClassIdentifier: 
   Type: 2
-  Name: Background03
+  Name: "\uD2A4\uB9BD"
   Image: {fileID: 21300000, guid: 4ff0a3f7bb3a8404bae0a5d575a18888, type: 3}
-  Money: 20
+  Money: 3000
