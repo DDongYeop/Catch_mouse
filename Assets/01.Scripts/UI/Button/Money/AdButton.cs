@@ -18,6 +18,10 @@ public class AdButton : UI_Button
     public override void OnPointerClick(PointerEventData eventData)
     {
         base.OnPointerClick(eventData);
-        _logText.SetActive(true);
+        //_logText.SetActive(true);
+        
+        AdMobManager.Instance.ShowRewardedAd();
+        GameManager.Instance.GamePlay = true;
+        GameManager.Instance.PopupUI.SetActive(false);
     }
 }
