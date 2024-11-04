@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour
             if (_moneyText)
                 _moneyText.text = _money.ToString();
             PlayerPrefs.SetInt("Money", _money);
+            PlayerPrefs.SetInt("AddMoney", PlayerPrefs.GetInt("AddMoney") + value);
+            if (PlayerPrefs.GetInt("AddMoney") >= 30)
+                Money += 3;
         }
     }
 
@@ -65,5 +68,11 @@ public class GameManager : MonoBehaviour
     {
         PoolManager.Instance = new PoolManager(transform);
         _poolingList.PoolList.ForEach(p => PoolManager.Instance.CreatePool(p.Prefab, p.Count));
+    }
+
+    [ContextMenu("AddMoney")]
+    public void AddMoney()
+    {
+        Money += 999999999;
     }
 }

@@ -45,7 +45,7 @@ public class ShopBackgroundPanel : MonoBehaviour
     {
         _background.sprite = DataManager.Instance.GetBackgroundData(type).Image;
 
-        for (int i = 0; i < (int)CatType.END; ++i)
+        for (int i = 0; i < (int)BackgroundType.END; ++i)
         {
             if (PlayerPrefs.GetInt(((BackgroundType)i).ToString()) == 2)
             {

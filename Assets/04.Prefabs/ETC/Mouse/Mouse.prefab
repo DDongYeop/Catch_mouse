@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e38511fdc41d42cf9dc938f87c43e9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _percent: 30
 --- !u!1 &9026151021979682060
 GameObject:
   m_ObjectHideFlags: 0
