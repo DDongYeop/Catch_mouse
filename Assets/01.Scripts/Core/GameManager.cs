@@ -20,9 +20,13 @@ public class GameManager : MonoBehaviour
             if (_moneyText)
                 _moneyText.text = _money.ToString();
             PlayerPrefs.SetInt("Money", _money);
-            PlayerPrefs.SetInt("AddMoney", PlayerPrefs.GetInt("AddMoney") + value);
+            if (value >= _money)
+                PlayerPrefs.SetInt("AddMoney", PlayerPrefs.GetInt("AddMoney") + (value - _money));
             if (PlayerPrefs.GetInt("AddMoney") >= 30)
+            {
+                PlayerPrefs.SetInt("AddMoney", PlayerPrefs.GetInt("AddMoney") - 30);
                 Money += 3;
+            }
         }
     }
 
