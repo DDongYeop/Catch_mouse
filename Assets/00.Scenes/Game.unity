@@ -579,6 +579,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 1152037911388636190, guid: b1f26e7d20ba14c8bb12827fed2a6abf, type: 3}
+      propertyPath: CatDatas.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152037911388636190, guid: b1f26e7d20ba14c8bb12827fed2a6abf, type: 3}
+      propertyPath: CatDatas.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: edf24e5f847aa41fc9b1a94f924e14c8, type: 2}
+    - target: {fileID: 1152037911388636190, guid: b1f26e7d20ba14c8bb12827fed2a6abf, type: 3}
+      propertyPath: CatDatas.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a5c14a1bba3c4c63bc08e96949e5c81, type: 2}
     - target: {fileID: 1890741964093134403, guid: b1f26e7d20ba14c8bb12827fed2a6abf, type: 3}
       propertyPath: Cat
       value: 
@@ -1341,7 +1353,7 @@ MonoBehaviour:
   _xPosition: 2
   _yPosition: 3.75
   _spawnTime: 5
-  _spawnPercent: 30
+  _spawnPercent: 50
 --- !u!1 &1221719510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1869,7 +1881,7 @@ Animator:
   m_GameObject: {fileID: 1705691602}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 4434610ea448f4b9b91abcf1f90b26bb, type: 2}
+  m_Controller: {fileID: 9100000, guid: c663ed4f6aec740ec8d2549e8310d04a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
