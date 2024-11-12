@@ -16,12 +16,14 @@ public class GameManager : MonoBehaviour
         get => _money;
         set
         {
+            if (value >= _money)
+                PlayerPrefs.SetInt("AddMoney", PlayerPrefs.GetInt("AddMoney") + (value - _money));
+
             _money = value;
             if (_moneyText)
                 _moneyText.text = _money.ToString();
             PlayerPrefs.SetInt("Money", _money);
-            if (value >= _money)
-                PlayerPrefs.SetInt("AddMoney", PlayerPrefs.GetInt("AddMoney") + (value - _money));
+
             if (PlayerPrefs.GetInt("AddMoney") >= 30)
             {
                 PlayerPrefs.SetInt("AddMoney", PlayerPrefs.GetInt("AddMoney") - 30);

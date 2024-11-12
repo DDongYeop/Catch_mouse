@@ -2,7 +2,7 @@ using UnityEngine;
 using GoogleMobileAds.Api;
  
 public class AdmobManager : MonoBehaviour
-{
+{ 
     public static AdmobManager Instance;
 
     private string adUnitId = "ca-app-pub-5714181718235393/5070112473";
@@ -69,12 +69,12 @@ public class AdmobManager : MonoBehaviour
             rewardedAd.Show((Reward reward) =>
             {
                 //보상 획득하기
+                GameManager.Instance.Money += 40;
                 Debug.Log(string.Format(rewardMsg, reward.Type, reward.Amount));
             });
         }
         else
         {
-            GameManager.Instance.Money += 40;
             LoadRewardedAd();
         }
     }
