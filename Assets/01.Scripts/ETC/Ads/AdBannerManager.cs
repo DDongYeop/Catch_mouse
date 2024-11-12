@@ -4,7 +4,7 @@ using UnityEngine;
 public class AdBannerManager : MonoBehaviour
 {
     // These ad units are configured to always serve test ads.
-    private string _adUnitId = "ca-app-pub-5714181718235393/7685984173";
+    private string _adUnitId = "ca-app-pub-5714181718235393/1120604072";
 
     private BannerView _bannerView;
 
@@ -28,10 +28,7 @@ public class AdBannerManager : MonoBehaviour
         
         // Create a 320x50 banner at top of the screen
         _bannerView = new BannerView(_adUnitId, AdSize.Banner, AdPosition.Bottom);
-    }
 
-    private void Start() 
-    {
         LoadAd();
     }
     
