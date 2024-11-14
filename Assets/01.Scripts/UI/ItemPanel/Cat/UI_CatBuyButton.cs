@@ -54,7 +54,10 @@ public class UI_CatBuyButton : UI_Button
         switch (PlayerPrefs.GetInt(_saveValue))
         {
             case 0:
-                _text.text = "구매";
+                if (GameManager.Instance.Money >= _money)
+                    _text.text = "구매";
+                else
+                    _text.text = "구매 불가";
                 break;
             case 1:
                 _text.text = "장착";

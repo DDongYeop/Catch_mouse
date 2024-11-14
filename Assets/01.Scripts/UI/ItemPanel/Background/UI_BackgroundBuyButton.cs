@@ -24,9 +24,7 @@ public class UI_BackgroundBuyButton : UI_Button
         switch (PlayerPrefs.GetInt(_saveValue))
         {
             case 0:
-                if (GameManager.Instance.Money < _money)
-                    Debug.Log("구매 불가. (사유: 돈 없음)");
-                else  
+                if (GameManager.Instance.Money >= _money)
                 {
                     GameManager.Instance.Money -= _money;
                     PlayerPrefs.SetInt(_saveValue, 1);
@@ -54,7 +52,10 @@ public class UI_BackgroundBuyButton : UI_Button
         switch (PlayerPrefs.GetInt(_saveValue))
         {
             case 0:
-                _text.text = "구매";
+                if (GameManager.Instance.Money >= _money)
+                    _text.text = "구매";
+                else
+                    _text.text = "구매 불가";
                 break;
             case 1:
                 _text.text = "장착";
