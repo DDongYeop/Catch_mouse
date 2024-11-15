@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0668c8f75ce04a37a071aa9d8bd987a, type: 3}
+  m_Name: Background05
+  m_EditorClassIdentifier: 
+  Type: 4
+  Name: wool
+  Image: {fileID: 21300000, guid: ff65e744de1ed0c488314ec869bd20b7, type: 3}
+  Money: 7500

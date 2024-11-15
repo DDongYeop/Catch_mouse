@@ -50,6 +50,7 @@ MonoBehaviour:
   Cat: {fileID: 0}
   _moneyText: {fileID: 0}
   _poolingList: {fileID: 11400000, guid: 7d4ec944bea0f4694a12d4df62d4424c, type: 2}
+  PopupUI: {fileID: 0}
   GamePlay: 1
 --- !u!114 &4702823905302768434
 MonoBehaviour:
@@ -80,11 +81,19 @@ MonoBehaviour:
   CatDatas:
   - {fileID: 11400000, guid: 9d77f9369866b4655a5dfd4772373f6c, type: 2}
   - {fileID: 11400000, guid: 76a34360bd5bf4155b27a0633170bcad, type: 2}
+  - {fileID: 11400000, guid: edf24e5f847aa41fc9b1a94f924e14c8, type: 2}
+  - {fileID: 11400000, guid: 7a5c14a1bba3c4c63bc08e96949e5c81, type: 2}
   BackgroundDatas:
   - {fileID: 11400000, guid: ec59fdcb79cf24bcaac2573e1e4a2732, type: 2}
   - {fileID: 11400000, guid: 0b53171a9f4e7485281146678661a4ed, type: 2}
   - {fileID: 11400000, guid: 847ea3d96dee64ff9b547e242e263405, type: 2}
   - {fileID: 11400000, guid: 0fc1be13e06554633b1e51b56bc04dd8, type: 2}
+  - {fileID: 11400000, guid: 7a44a36fb53a91448aa90cc974e6bef5, type: 2}
+  - {fileID: 11400000, guid: ba7f8fa1ffa3b234eae6abf006aad4c8, type: 2}
+  - {fileID: 11400000, guid: 8d0b64b701f713d4ab2ad7dc8a37e5c8, type: 2}
+  - {fileID: 11400000, guid: 6f75ef9c5eca0274ea9db7596098d843, type: 2}
+  - {fileID: 11400000, guid: 8509f9dae3f9e2a4fbcb9362c4bb993e, type: 2}
+  - {fileID: 11400000, guid: 2d08da0b44ddec347b6f7b458691ea66, type: 2}
 --- !u!114 &5868348502785975817
 MonoBehaviour:
   m_ObjectHideFlags: 0

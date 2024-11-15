@@ -4,5 +4,11 @@ public enum BackgroundType
     Background02 = 1, 
     Background03 = 2, 
     Background04 = 3, 
-    END = 4, 
+    Background05 = 4, 
+    Background06 = 5, 
+    Background07 = 6, 
+    Background08 = 7, 
+    Background09 = 8, 
+    Background10 = 9, 
+    END = 10, 
 }
