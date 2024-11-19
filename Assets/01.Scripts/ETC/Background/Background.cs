@@ -3,6 +3,7 @@ using UnityEngine;
 public class Background : MonoBehaviour
 {
     private SpriteRenderer _spriteRenderer;
+    public static BackgroundSO CurrentBackground;
 
     private void Awake() 
     {
@@ -19,7 +20,13 @@ public class Background : MonoBehaviour
         for (int i = 0; i < (int)BackgroundType.END; ++i)
         {
             if (PlayerPrefs.GetInt(((BackgroundType)i).ToString()) == 2)
-                _spriteRenderer.sprite = DataManager.Instance.GetBackgroundData((BackgroundType)i).Image;
+                SetBackground((BackgroundType)i);
         }
+    }
+
+    public void SetBackground(BackgroundType type)
+    {
+        CurrentBackground = DataManager.Instance.GetBackgroundData(type);
+        _spriteRenderer.sprite = CurrentBackground.Image;
     }
 }

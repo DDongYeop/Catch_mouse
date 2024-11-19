@@ -6,7 +6,7 @@ public class ShopBackgroundPanel : MonoBehaviour
     private Transform _contectTrm;
 
     [Header("Background")]
-    [SerializeField] private SpriteRenderer _background;
+    [SerializeField] private Background _background;
 
     [Header("SpawnObj")]
     [SerializeField] private GameObject _horizontalLayoutGroup;
@@ -43,7 +43,7 @@ public class ShopBackgroundPanel : MonoBehaviour
 
     public void ChangeBackground(BackgroundType type)
     {
-        _background.sprite = DataManager.Instance.GetBackgroundData(type).Image;
+        _background.SetBackground(type);
 
         for (int i = 0; i < (int)BackgroundType.END; ++i)
         {

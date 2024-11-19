@@ -16,3 +16,5 @@ MonoBehaviour:
   Name: park
   Image: {fileID: 21300000, guid: 8ae0a08941a847b46a1655c4251429d3, type: 3}
   Money: 10000
+  AddMoneyPercent: 30
+  AddIconPercent: 27

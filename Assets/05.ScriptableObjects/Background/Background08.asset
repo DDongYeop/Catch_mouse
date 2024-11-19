@@ -16,3 +16,5 @@ MonoBehaviour:
   Name: playroom
   Image: {fileID: 21300000, guid: e1185423954fb1b4593f388f9caf8ab6, type: 3}
   Money: 10000
+  AddMoneyPercent: 24
+  AddIconPercent: 21

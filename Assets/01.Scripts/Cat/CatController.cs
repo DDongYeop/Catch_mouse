@@ -54,7 +54,7 @@ public class CatController : MonoBehaviour, GetTouch
         PoolManager.Instance.Pop("MeowSound");
  
         float value = Random.Range(0.0f, 1.0f);
-        if (value <= _getPercent / 100.0f)
+        if (value <= (_getPercent + Background.CurrentBackground.AddMoneyPercent) / 100.0f)
         {
             GameManager.Instance.Money += _addMoney;
             return true;

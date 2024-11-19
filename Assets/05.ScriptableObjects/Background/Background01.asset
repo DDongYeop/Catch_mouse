@@ -16,3 +16,5 @@ MonoBehaviour:
   Name: "\uC794\uB514"
   Image: {fileID: 21300000, guid: 46f2fa31aa4b21a48853f65f86ec7c66, type: 3}
   Money: 0
+  AddMoneyPercent: 3
+  AddIconPercent: 0

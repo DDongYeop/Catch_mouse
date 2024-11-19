@@ -16,3 +16,5 @@ MonoBehaviour:
   Name: richroom
   Image: {fileID: 21300000, guid: 15c85751db796dd49a27e7d674221f17, type: 3}
   Money: 10000
+  AddMoneyPercent: 27
+  AddIconPercent: 24

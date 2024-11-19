@@ -16,3 +16,5 @@ MonoBehaviour:
   Name: wool
   Image: {fileID: 21300000, guid: ff65e744de1ed0c488314ec869bd20b7, type: 3}
   Money: 7500
+  AddMoneyPercent: 15
+  AddIconPercent: 12

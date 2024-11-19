@@ -27,7 +27,7 @@ public class MouseSpawner : MonoBehaviour
 
         _addTime -= _spawnTime;
         float percent = Random.Range(0.0f, 1.0f);
-        if (_spawnPercent / 100f < percent)
+        if ((_spawnPercent + Background.CurrentBackground.AddIconPercent) / 100f < percent)
             return;
 
         Mouse mouse = PoolManager.Instance.Pop("Mouse") as Mouse;

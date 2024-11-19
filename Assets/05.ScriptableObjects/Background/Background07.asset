@@ -16,3 +16,5 @@ MonoBehaviour:
   Name: clouds
   Image: {fileID: 21300000, guid: d8a84631ae0d5f440a3d24cbeeba8216, type: 3}
   Money: 10000
+  AddMoneyPercent: 21
+  AddIconPercent: 18

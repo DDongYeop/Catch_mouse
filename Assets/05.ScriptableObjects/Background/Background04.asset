@@ -16,3 +16,5 @@ MonoBehaviour:
   Name: "\uB9C8\uB8E8"
   Image: {fileID: 21300000, guid: aea642c2688e0c445a7b6fe3dc6b2183, type: 3}
   Money: 5000
+  AddMoneyPercent: 12
+  AddIconPercent: 9
